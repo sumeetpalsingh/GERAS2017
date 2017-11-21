@@ -34,11 +34,11 @@ The shared data contains two folders:
 <br><li><strong> TestData: Data for testing the GERAS models</strong></li>
 <br>Zebrafish Test Data:
 <br>1.5 mpf beta-cells
-<br>4 mpf beta-cells
 <br>3 mpf beta-cells sequenced using C1-Chip Fludigm
-<br>9 mpf beta-cells
+<br>4 mpf beta-cells
 <br>4 mpf beta-cells from animals on low-calorie diet
 <br>4 mpf beta-cells from animals on high-calorie diet
+<br>9 mpf beta-cells
 <br>
 <br>Human Pancreatic Test Data:
 <br>Data published in <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/27667667/"> Segerstolpe et al., 2016 </a>  
