@@ -26,14 +26,14 @@ shiny_GERAS_Tf.R: R file to run the Shiny app.
 Data for generating and testing the model can be found at: https://sharing.crt-dresden.de/index.php/s/zcQ14AMGJAevokU
 
 The shared data contains two folders:
-
-1. Data: Containing the data to develop GERAS.
+<ol type="1">
+<li><bold> Data: Containing the data to develop GERAS.</bold></li>
 
 Zf_AllStages_TPM.csv: TPM-normalized values from all stages of zebrafish beta-cells
 
 Enge_RPM.csv: RPM-normalized values from human pancreatic cells published in <a href="https://www.biorxiv.org/content/early/2017/02/13/108043"> Enge et al., 2017 </a>
 
-2. TestData: Data for testing the GERAS models
+<li><bold> TestData: Data for testing the GERAS models</bold></li>
 
 Zebrafish Test Data:
 <br>1.5 mpf beta-cells
@@ -45,4 +45,4 @@ Zebrafish Test Data:
 
 Human Pancreatic Test Data:
 <br>Data published in <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/27667667/"> Segerstolpe et al., 2016 </a>  
-
+</ol>
