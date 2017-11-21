@@ -27,13 +27,13 @@ Data for generating and testing the model can be found at: https://sharing.crt-d
 
 The shared data contains two folders:
 <ol type="1">
-<li><bold> Data: Containing the data to develop GERAS.</bold></li>
+<li style="font-weight: bold;">Data: Containing the data to develop GERAS.</li>
 
 Zf_AllStages_TPM.csv: TPM-normalized values from all stages of zebrafish beta-cells
 
 Enge_RPM.csv: RPM-normalized values from human pancreatic cells published in <a href="https://www.biorxiv.org/content/early/2017/02/13/108043"> Enge et al., 2017 </a>
 
-<li><bold> TestData: Data for testing the GERAS models</bold></li>
+<li style="font-weight: bold;"> TestData: Data for testing the GERAS models</li>
 
 Zebrafish Test Data:
 <br>1.5 mpf beta-cells
