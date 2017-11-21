@@ -31,7 +31,7 @@ The shared data contains two folders:
 <br>Zf_AllStages_TPM.csv: TPM-normalized values from all stages of zebrafish beta-cells
 <br>Enge_RPM.csv: RPM-normalized values from human pancreatic cells published in <a href="https://www.biorxiv.org/content/early/2017/02/13/108043"> Enge et al., 2017 </a>
 <br>
-<li><strong> TestData: Data for testing the GERAS models</strong></li>
+<br><li><strong> TestData: Data for testing the GERAS models</strong></li>
 <br>Zebrafish Test Data:
 <br>1.5 mpf beta-cells
 <br>4 mpf beta-cells
