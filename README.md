@@ -21,3 +21,28 @@ GERAS_Tf_Hs.html: The report from Rmarkdown detailing the steps used for develop
 GERAS_Tf_Hs_Final.rds: The GERAS model for human pancreatic cells.
 
 shiny_GERAS_Tf.R: R file to run the Shiny app.
+
+## Data
+Data for generating and testing the model can be found at: https://sharing.crt-dresden.de/index.php/s/zcQ14AMGJAevokU
+
+The shared data contains two folders:
+
+1. Data: Containing the data to develop GERAS.
+
+Zf_AllStages_TPM.csv: TPM-normalized values from all stages of zebrafish beta-cells
+
+Enge_RPM.csv: RPM-normalized values from human pancreatic cells published in <a href="https://www.biorxiv.org/content/early/2017/02/13/108043"> Enge et al., 2017 </a>
+
+2. TestData: Data for testing the GERAS models
+
+Zebrafish Test Data:
+<br>1.5 mpf beta-cells
+<br>4 mpf beta-cells
+<br>3 mpf beta-cells sequenced using C1-Chip Fludigm
+<br>9 mpf beta-cells
+<br>4 mpf beta-cells from animals on low-calorie diet
+<br>4 mpf beta-cells from animals on high-calorie diet
+
+Human Pancreatic Test Data:
+<br>Data published in <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/27667667/"> Segerstolpe et al., 2016 </a>  
+
