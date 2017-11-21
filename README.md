@@ -13,9 +13,9 @@ shiny_GERAS_Tf: files necessary to run the Shiny app. Must be in the same folder
 ## Files contained here are:
 ('Tf' in file names denoted 'Tensorflow', the API used to develop the machine learning framework).
 
-GERAS_Tf_Zf.html: The report from Rmarkdown detailing the steps used for developing the human pancreatic GERAS.
+GERAS_Tf_Zf.html: The report from Rmarkdown detailing the steps used for developing zebrafish beta-cell GERAS.
 
-GERAS_Tf_Zf_Final.rds: The GERAS model for human pancreatic cells.
+GERAS_Tf_Zf_Final.rds: The GERAS model for zebrafish beta-cells.
 
 GERAS_Tf_Hs.html: The report from Rmarkdown detailing the steps used for developing the human pancreatic GERAS.
 
