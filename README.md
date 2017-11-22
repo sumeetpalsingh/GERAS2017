@@ -37,8 +37,8 @@ The shared data contains two folders:
 <br>1.5 mpf beta-cells
 <br>3 mpf beta-cells sequenced using C1-Chip Fludigm
 <br>4 mpf beta-cells
-<br>4 mpf beta-cells from animals on lower-calorie diet
-<br>4 mpf beta-cells from animals on higher-calorie diet
+<br>4 mpf beta-cells from animals on intermittent feeding
+<br>4 mpf beta-cells from animals on three-times daily feeding
 <br>9 mpf beta-cells
 <br>
 <br>Human Pancreatic Test Data:
