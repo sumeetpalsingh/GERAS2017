@@ -1,0 +1,11 @@
+Package: GERAS
+Title: Machine Learning Framework for prediction of single-cell's chronological age
+Version: 0.0.1
+Authors@R: person("Sumeet", "Singh", email = "sumeetpalsingh@gmail.com", role = c("aut", "cre"))
+Description: Aging is a fundamental process, in which cells change their characteristics with time.  The techniques for estimating the age of individual cells and its modifiers are limited, as they depend on a restricted set of indicators and histological post hoc analysis.  GERAS (GEnetic Reference for Age of Single-cell) is the result of interdisciplinary work, which uses single-cell gene expression data to categorize the age of individual cells.  In current version, GERAS was broadly applicable in classifying the age of both zebrafish and human pancreatic cells.  Additionally, GERAS successfully discerned the effects of calorie intake and body mass index on the aging of individual cells.
+Depends: R (>= 3.3.2)
+Imports: tensorflow
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1.9000
