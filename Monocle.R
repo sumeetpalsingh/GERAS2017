@@ -21,9 +21,9 @@ print(paste("The data contains",ncol(myData),"samples from",
             max(as.numeric(myTimePoints)),myTimePeriod))
 
 
-## We will set the stage of each discrete time point. We have seven time points: 1, 3, 4, 6, 10, 12, 14 mpf
-## The first one (1 mpf) is set to 'Juvenile', next three (3, 4, 6 mpf) to 'Young', and the last three (10, 12, 14 mpf) to 'Old'
-Age.labels <- c("Juvenile", rep("Young", 3), rep("Old", 3))
+## In here, we will set the stage of each discrete time point. We have seven time points: 1, 3, 4, 6, 10, 12, 14 mpf
+## The first one (1 mpf) is set to 'Juvenile', next three (3, 4, 6 mpf) to 'Adolescent', and the last three (10, 12, 14 mpf) to 'Adult'
+Age.labels <- c("Juvenile", rep("Adolescent", 3), rep("Adult", 3))
 
 ## We redo the old ages to new stages
 ## Since this command throws a warning about repeating levels, we will temporally suppress them.
@@ -47,6 +47,8 @@ SC <- newCellDataSet(as.matrix(myData),
 ## Find genes for ordering
 SC <- estimateSizeFactors(SC)
 SC <- estimateDispersions(SC)
+
+## Ordering based on genes with high dispersion across cells
 disp_table <- dispersionTable(SC)
 ordering_genes <- subset(disp_table,
                          mean_expression >= 0.5 &
@@ -62,3 +64,30 @@ plot_cell_trajectory(SC, color_by="Sample.age.conditions")
 pdf(file = "Pseudotime.pdf", width = 5, height = 5, useDingbats = F)
 plot_cell_trajectory(SC, color_by="Sample.age.conditions")
 dev.off()
+
+## Ordering based on differentially expressed genes
+## First, we remove genes expressed in less than 10% (64) cells
+SC <- detectGenes(SC, min_expr = 0.1)
+print(head(fData(SC)))
+expressed_genes <- row.names(subset(fData(SC), num_cells_expressed >= 64))
+length(expressed_genes)
+
+diff_test_res <- differentialGeneTest(SC[expressed_genes,],
+                                      fullModelFormulaStr="~Sample.age.conditions")
+# saveRDS(diff_test_res, file = "diff_test_res_Monocle.rds")
+
+# diff_test_res <- readRDS("diff_test_res_Monocle.rds")
+ordering_genes <- row.names (subset(diff_test_res, qval < 0.01))
+SC <- setOrderingFilter(SC, ordering_genes)
+plot_ordering_genes(SC)
+
+#Ordering
+SC <- reduceDimension(SC, max_components=2)
+SC <- orderCells(SC, reverse=T)
+plot_cell_trajectory(SC, color_by="Sample.age.conditions")
+
+pdf(file = "Pseudotime_2.pdf", width = 5, height = 5, useDingbats = F)
+plot_cell_trajectory(SC, color_by="Sample.age.conditions")
+dev.off()
+
+
