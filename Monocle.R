@@ -3,7 +3,7 @@ library(reshape)
 library(Matrix)
 library(dplyr)
 
-myData <- utils::read.table("Data/FilteredCell_Aging_AllReads_06Sept2017.csv", 
+myData <- utils::read.table("Data/Zf_AllStages_Counts.csv", 
                                     row.names = 1, sep = ',', header = T, check.names = F)
 ## Extract name from column name
 myTimeString = regmatches(colnames(myData),regexpr("[0-9A-Za-z]+",colnames(myData)))
