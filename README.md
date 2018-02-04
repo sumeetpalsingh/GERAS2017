@@ -13,6 +13,8 @@ source: functions necessary to run GERAS, as well as extract information from de
 
 shiny_GERAS_Tf: files necessary to run the Shiny app. Must be in the same folder as Shiny_GERAS_Tf.R
 
+HumanPancreas: files for training and testing human pancreatic GERAS
+
 ## Files contained here are:
 ('Tf' in file names denoted 'Tensorflow', the API used to develop the machine learning framework).
 
