@@ -6,7 +6,7 @@ The folder contains Rmarkdown reports for generating GERAS for zebrafish beta-ce
 Data for generating and testing the zebrafish model can be found at GEO (GSE109881): 
 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109881
 
-Data for generating and testing the human model can be found in the 'HumanPancreaticData' folder
+Data for generating and testing the human model can be found in the 'HumanPancreas' folder
 
 ## Folders contained here are:
 source: functions necessary to run GERAS, as well as extract information from developed model.
