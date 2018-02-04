@@ -9,4 +9,4 @@ test.data <- sparse2dataframe(file = "Hn_pRPM.rds"),
 
 where
 sparse2dataframe() is a function deposited in 'sourse' folder,
-Hn_pRPM.rds is a file storing the reads for a particular individual.
+<br>Hn_pRPM.rds is a file storing the reads for a particular individual.
