@@ -32,7 +32,7 @@ shiny_GERAS_Tf.R: R file to run the Shiny app.
 Data for generating and testing the zebrafish model can be found at GEO (GSE109881): 
 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109881
 
-Data for generating and testing the human model can be found in the 'HumanPancreas' folder on Github
+Data for generating and testing the human model can be found in the <a href = "https://github.com/sumeetpalsingh/GERAS2017/tree/master/HumanPancreas">'HumanPancreas' folder on Github </a>
 
 The shared data contains:
 <ol type="1">
