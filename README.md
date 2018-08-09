@@ -57,4 +57,4 @@ The shared data contains:
 </ol>
 
 ## Additional Files
-Monocle.R: For unsupervised pseudotemporal ordering
+Zf_MultinomialLogisticRegression.R: For classification based on a Multinomial Logistic Regression using the nnet package.
