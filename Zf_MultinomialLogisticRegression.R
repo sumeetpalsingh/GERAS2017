@@ -1,5 +1,3 @@
-setwd("~/Documents/NikolayLab/SingleCellRNASeq/Classification/Logistic")
-
 library(nnet)
 
 ## Choose the data file
@@ -107,5 +105,5 @@ head(predicted.classes)
 # Model accuracy
 mean(predicted.classes == as.numeric(test.cond))
 
-source('~/Documents/NikolayLab/SingleCellRNASeq/Classification/TensorFlow/source/prediction_metrics.R')
+source('source/prediction_metrics.R')
 prediction_metrics(test.cond, as.numeric(predicted.classes) - 1)
